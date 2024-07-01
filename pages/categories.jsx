@@ -6,6 +6,7 @@ import { Category } from '@/models/Category';
 import { mongooseConnect } from '@/lib/mongoose';
 import Link from 'next/link';
 import Loading from '@/components/Loading';
+import CartButton from '@/components/CartButton';
 
 export default function CategoriesPage({ categories , loading}) {
 
@@ -16,6 +17,7 @@ export default function CategoriesPage({ categories , loading}) {
   }
   return (
     <>
+      <CartButton/>
       <Header />
       <div className='min-h-screen w-full flex justify-center'>
         <Center>

@@ -5,6 +5,7 @@ import {Product} from "@/models/Product";
 import ProductsGrid from "@/components/ProductsGrid";
 import Footer from "@/components/Footer";
 import Loading from "@/components/Loading";
+import CartButton from "@/components/CartButton";
 
 export default function ProductsPage({products ,  loading}) {
   if (loading) {
@@ -15,6 +16,7 @@ export default function ProductsPage({products ,  loading}) {
 
   return (
     <>
+      <CartButton/>
       <Header />
       <div className="w-full min-h-screen flex justify-center">
         <Center>

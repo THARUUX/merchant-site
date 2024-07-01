@@ -11,6 +11,7 @@ import Link from 'next/link';
 import Loading from '@/components/Loading';
 import ProductsGrid from '@/components/ProductsGrid';
 import BackButton from '@/components/BackButton';
+import CartButton from '@/components/CartButton';
 
 export default function CategoryInner({ categories, categoryProducts }) {
     const [parentCategory, setCategoryInfo] = useState(null);
@@ -69,6 +70,7 @@ export default function CategoryInner({ categories, categoryProducts }) {
 
     return (
         <>
+            <CartButton/>
             <BackButton />
             <Header />
             <div className='w-full min-h-screen flex justify-center'>

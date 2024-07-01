@@ -120,7 +120,7 @@ export default function CartPage() {
                                 <h1 className='text-3xl text-center'>Thanks for your order!</h1>
                                 <p>We will contact you when your order will be sent.</p>
                                 <div className='text-center'>
-                                    <button onClick={() => (window.location.href = "/")} className='btn bg-lime-500 text-white py-1 mt-5 px-5 rounded shadow-md flex gap-2 items-center'>
+                                    <button onClick={() => (window.location.href = "/")} className='btn bg-slate-900 text-white py-1 mt-5 px-5 rounded shadow-md flex gap-2 items-center'>
                                         Back
                                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="white" className="w-4 h-4">
                                             <path strokeLinecap="round" strokeLinejoin="round" d="M9 15 3 9m0 0 6-6M3 9h12a6 6 0 0 1 0 12h-3" />
@@ -209,7 +209,7 @@ export default function CartPage() {
                                             type="checkbox"
                                             checked={pickupFromStore}
                                             onChange={ev => setPickupFromStore(ev.target.checked)}
-                                            className="w-4 h-4 text-lime-600 bg-gray-100 border-gray-300 rounded focus:ring-lime-500 dark:focus:ring-lime-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
+                                            className="w-4 h-4 text-slate-900 bg-gray-100 border-gray-300 rounded focus:ring-slate-900 dark:focus:ring-slate-900 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
                                         />
                                         <label htmlFor="default-checkbox" className="ms-2 text-sm font-medium text-main-dark">
                                             Pickup from store
@@ -250,7 +250,7 @@ export default function CartPage() {
                                         </div>
                                     </div>
                                     <button black block
-                                        className='btn bg-lime-500 px-4 py-2 rounded shadow-lg'
+                                        className='btn bg-slate-900 text-white px-4 py-2 rounded shadow-lg'
                                         onClick={placeOrder}>
                                         Place the order
                                     </button>

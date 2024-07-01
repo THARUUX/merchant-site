@@ -7,11 +7,13 @@ import {useContext} from "react";
 import {CartContext} from "@/components/CartContext";
 import Loading from "@/components/Loading";
 import BackButton from "@/components/BackButton";
+import CartButton from "@/components/CartButton";
 
 export default function ProductPage({product}) {
   const {addProduct} = useContext(CartContext);
   return (
     <>
+      <CartButton/>
       <BackButton />
       <Header />
       <div className="w-full flex justify-center">

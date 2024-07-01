@@ -5,14 +5,25 @@ import NewProducts from "@/components/NewProducts";
 import Footer from "@/components/Footer";
 import Loading from "@/components/Loading";
 import ProductBox from "@/components/ProductBox";
+import Link from "next/link";
+import { CartContext } from "@/components/CartContext";
+import { useContext } from "react";
+import { useState } from "react";
+import CartButton from "@/components/CartButton";
 
-export default function HomePage({ newProducts, loading, productLoading }) {
+
+export default function HomePage({ newProducts, productLoading }) {
+  const {cartProducts} = useContext(CartContext);
+  const [loading, setLoading] = useState(false);
+
+
   if (loading) {
     return <Loading />;
   }
 
   return (
     <>
+      <CartButton/>
       {productLoading && <Loading/>}
       <div className="flex justify-center flex-col w-screen items-center relative">
         <Header homeActive="open" />

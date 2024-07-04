@@ -37,7 +37,7 @@ export default function ProductPage({product}) {
             <div className="bg-white rounded md:w-1/2 p-10 h-max single-product-div-1-1-1">
               <ProductImages images={product.images} />
             </div>
-            <div className="sm:p-10 p-5 md:w-1/2 h-full justify-between flex flex-col single-product-div-1-1-2">
+            <div className="sm:p-10 p-5 md:w-1/2 h-full flex flex-col single-product-div-1-1-2">
               <div className="">
                 <div className="text-3xl mb-5 text-main-dark">{product.title}</div>
                 <p className="text-sm rounded product-description overflow-scroll mb-5 text-main-dark">{formattedDesc} </p>

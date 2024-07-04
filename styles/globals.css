@@ -234,7 +234,10 @@ a{
     max-height: 600px;
 }
 
-.product-image, .product-description{
+.product-image{
+    height: 600px;
+}
+.product-description{
     max-height: 600px;
 }
 
@@ -246,18 +249,27 @@ a{
 /* Resposinve */
 
 @media (max-width: 1100px) {
-    .product-image, .product-description{
+    .product-description{
         max-height: 40vw;
+    }
+    .product-image{
+        height: 40vw;
     }
 }
 @media (max-width: 900px) {
-    .product-image, .product-description{
+    .product-image{
+        height: 40vw;
+    }
+    .product-description{
         max-height: 40vw;
     }
 }
 
 @media (max-width: 767px) {
-    .product-image, .product-description{
+    .product-image{
+        height: 60vw;
+    }
+    .product-description{
         max-height: 60vw;
     }
 

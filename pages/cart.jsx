@@ -94,7 +94,7 @@ export default function CartPage() {
     }, 0) / 1000;
 
     //let deliveryFee = 400 + Math.floor(weightTotal) * 80;
-    let deliveryFee = 0 + Math.floor(weightTotal) * 00;
+    let deliveryFee = 0 + Math.floor(weightTotal) * 0;
     let Final = pickupFromStore ? total : deliveryFee + total;
 
     function clearTheCart() {

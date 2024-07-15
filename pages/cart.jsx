@@ -187,7 +187,7 @@ export default function CartPage() {
                                                 <td className=' text-center font-bold'>Kg {weightTotal}</td>
                                             </tr>
                                             <tr className={` ${pickupFromStore ? 'hidden' : ''}`}>
-                                                <td className='col-span-2 text-start pl-5'>Delivery Fee</td>
+                                                <td className='col-span-2 text-start pl-5'>Delivery Fee <span className='text-red-500'>(FREE)</span></td>
                                                 <td className=''></td>
                                                 <td className=' text-center font-bold border-b-2 border-slate-500'>Rs.{deliveryFee}.00</td>
                                             </tr>
@@ -204,7 +204,7 @@ export default function CartPage() {
                                 <div className='mt-10 mb-10 billing'>
                                     <h2 className='text-2xl'>Order information</h2>
                                     <div className='flex flex-col gap-10 my-10'>
-                                        <div className="flex items-center text-sm">
+                                        <div className="flex items-center text-sm hidden">
                                         <input
                                             id="default-checkbox"
                                             type="checkbox"

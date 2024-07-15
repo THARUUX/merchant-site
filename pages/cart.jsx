@@ -216,7 +216,7 @@ export default function CartPage() {
                                             Pickup from store
                                         </label>
                                         </div>
-                                        <span className='text-xs text-red-500'>*If you are able to pickup from our store, the delivery fee will not be added.</span>
+                                        <span className='text-xs text-red-500 hidden'>*If you are able to pickup from our store, the delivery fee will not be added.</span>
                                         <input type="text"
                                             className='px-3 py-2  border-slate-300 rounded-sm shadow-md'
                                             placeholder="Name"
